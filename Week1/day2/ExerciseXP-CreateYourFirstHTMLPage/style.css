@@ -1,0 +1,20 @@
+.yellow {
+  background-color: yellow;
+}
+ul h3 {
+  text-decoration: underline;
+}
+.margin {
+  margin-top: 1px;
+}
+img {
+  width: 35%;
+  border: 6px solid orange;
+}
+.center {
+  margin-top: 5%;
+  text-align: center;
+}
+a {
+  color: blue;
+}
