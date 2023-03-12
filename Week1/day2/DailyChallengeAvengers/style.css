@@ -1,0 +1,81 @@
+body {
+  background-image: url(Thor0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+header {
+  margin-top: 7%;
+  margin-left: 3%;
+  font-family: fantasy;
+  font-size: 2rem;
+  opacity: 0.6;
+  display: inline-flex;
+  width: 30%;
+}
+main {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 10%;
+  font-size: 1.2rem;
+  color: white;
+}
+p {
+  margin-left: 3%;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: azure;
+}
+nav {
+  z-index: 0;
+  background-color: rgb(27, 27, 27);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  height: 12%;
+  height: 10%;
+}
+
+.img {
+  position: fixed;
+  z-index: 1;
+  left: 2%;
+  width: 7%;
+  z-index: 1;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  float: right;
+  margin-top: -1%;
+  margin-right: 6%;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+footer {
+  color: white;
+  display: block;
+}
+img {
+  width: 4%;
+
+  margin: 1% 0 0 7%;
+}
+.center {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.margin {
+  margin: 0 1%;
+}
