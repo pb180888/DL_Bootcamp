@@ -19,7 +19,7 @@ img {
   float: right;
   width: 30%;
 
-  border-bottom: 15px solid rgb(242, 162, 21);
+  border-bottom: 10px solid rgb(242, 162, 21);
 }
 .name,
 .surname {
@@ -73,6 +73,9 @@ img {
 .div6 {
   margin-top: 5%;
   border: 1px solid gray;
+}
+.font3 div {
+  font-size: 1.2rem;
 }
 .border {
   position: absolute;
