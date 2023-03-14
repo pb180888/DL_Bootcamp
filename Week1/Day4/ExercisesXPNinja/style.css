@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  /* font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif; */
+  font-family: sans-serif;
+}
+section {
+  width: 35%;
+  height: 700px;
+  border: 2px solid black;
+}
+#first {
+  background-color: rgb(250, 250, 250);
+  color: rgb(156, 156, 156);
+}
+form {
+  text-align: center;
+}
+input {
+  padding-left: 4%;
+  font-size: 100%;
+}
+.inlineBlock {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+.LogIn {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+.first {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 80%;
+  height: 40px;
+}
+.background {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(238, 238, 238);
+}
+.submit {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: rgb(156, 39, 176);
+  color: white;
+  border: 0.5px solid rgb(156, 39, 176);
+  font-size: 1.2rem;
+}
+.createLine {
+  text-align: center;
+  position: relative;
+}
+.createLine::before {
+  position: absolute;
+  content: " ";
+  background-color: gray;
+  width: 20%;
+  height: 0.1px;
+  top: 10px;
+  left: 15%;
+}
+.createLine::after {
+  position: absolute;
+  content: " ";
+  background-color: gray;
+  width: 20%;
+  height: 0.1px;
+  top: 10px;
+  right: 15%;
+}
+
+#second {
+  text-align: center;
+  background-image: linear-gradient(-30deg, rgb(153, 38, 173), rgb(31, 43, 43));
+  color: white;
+}
+.user {
+  padding-top: 25%;
+  width: 30%;
+}
+.hello {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.enter {
+  font-size: 1.2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.logo {
+  text-align: center;
+  margin-top: 5%;
+  display: inline-block;
+}
+.logo img {
+  margin: 2%;
+  width: 10%;
+}
+footer {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.botton {
+  display: inline-block;
+  padding: 2.7%;
+  padding-left: 6%;
+  padding-right: 6%;
+  border: 1px solid white;
+  border-radius: 35px/35px;
+  margin-top: 5%;
+  width: 25%;
+}
+.register {
+  position: relative;
+  margin-right: 10%;
+}
+.arrow {
+  width: 10%;
+  /* position: absolute;
+  margin-top: -1px; */
+}
