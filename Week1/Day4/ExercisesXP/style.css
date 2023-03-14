@@ -1,0 +1,168 @@
+body {
+  background-color: rgb(242, 244, 244);
+  padding: 5%;
+  /* border: 2px solid red; */
+}
+header {
+}
+main {
+  /* margin-top: 5%; */
+}
+
+/* .red {
+  border: 2px solid red;
+} */
+img {
+  float: right;
+  width: 30%;
+
+  border-bottom: 15px solid rgb(242, 162, 21);
+}
+.name,
+.surname {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+}
+.surname {
+  font-weight: bold;
+}
+.name,
+.surname {
+  font-size: 4rem;
+}
+.section1 {
+  overflow: hidden;
+}
+.div1 {
+  margin-top: 3%;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+}
+.div2,
+.div3 {
+  padding: 2%;
+}
+.div2 {
+  border-right: 10px solid rgba(19.2, 20.4, 28.6, 0.2);
+  width: 30%;
+  height: 350px;
+  padding-left: 2%;
+  overflow: auto;
+}
+.div3 {
+  border-left: 10px solid rgba(19.2, 20.4, 28.6, 0.2);
+  width: 70%;
+  height: 350px;
+  padding-left: 0 3%;
+}
+
+.div4 {
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+}
+.div6 {
+  margin-top: 5%;
+  border: 1px solid gray;
+}
+.border {
+  position: absolute;
+  border-bottom: 3px solid rgb(242, 162, 21);
+  width: 5%;
+}
+.border1 {
+  border-bottom: 2px solid rgb(242, 162, 21);
+  width: 15%;
+}
+.border2 {
+  border-bottom: 2px solid rgb(242, 162, 21);
+  width: 6.43%;
+}
+
+.sectionMain {
+  display: flex;
+}
+.pic {
+  width: 8%;
+  border: none;
+  float: none;
+  margin-right: 5%;
+}
+.sectionMain span {
+  font-size: 1.2rem;
+}
+.sectionMain p {
+  display: flex;
+}
+#fontLinkedIn {
+  font-size: 1.1rem;
+}
+.margin {
+  margin-top: 15%;
+}
+.margin {
+  margin-top: 6.43%;
+}
+.marginBottom {
+  margin-bottom: 3%;
+}
+.font {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+#font1 {
+  font-size: 1.3rem;
+}
+#font2 {
+  font-size: 1.5rem;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 5%;
+}
+li::before {
+  content: "•";
+  color: rgb(242, 162, 21);
+  margin-right: 5px;
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .section1 {
+    overflow: unset;
+  }
+  .section1 img {
+    float: none;
+    width: 100%;
+  }
+  .name,
+  .surname {
+    font-size: 3rem;
+  }
+  .sectionMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .div2,
+  .div3 {
+    display: contents;
+    width: 100%;
+  }
+  .border1,
+  .border {
+    width: 6.43%;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
