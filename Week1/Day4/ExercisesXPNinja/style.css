@@ -23,10 +23,17 @@ input {
   padding-left: 4%;
   font-size: 100%;
 }
+.remember {
+  margin-right: 10%;
+}
+.forgot {
+  margin-left: 15%;
+}
 .inlineBlock {
   margin-top: 2%;
   margin-bottom: 3%;
   display: inline-block;
+  width: 80%;
 }
 .LogIn {
   text-align: center;
