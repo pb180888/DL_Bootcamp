@@ -1,0 +1,129 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+section {
+  text-align: center;
+}
+.mainDiv {
+  /* border: 2px solid black; */
+  width: 16%;
+  height: 450px;
+  display: inline-block;
+  margin: 1%;
+}
+
+.firstDiv {
+  /* border: 2px solid black; */
+  width: 99%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.picOne {
+  background-image: url(./pics/image1.png);
+}
+.picTwo {
+  background-image: url(./pics/image2.png);
+}
+.picThree {
+  background-image: url(./pics/image3.png);
+}
+.picFour {
+  background-image: url(./pics/image4.png);
+}
+.secondDiv {
+  width: 99%;
+  height: 29%;
+  /* border: 2px solid black; */
+  position: relative;
+}
+.name,
+.price,
+.button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: inline-block;
+  width: 80%;
+}
+.name {
+  top: 14%;
+}
+.price {
+  top: 24%;
+}
+
+.fontOne {
+  color: rgb(22, 160, 133);
+  font-size: 1.2rem;
+  margin-right: 2%;
+}
+.fontTwo {
+  text-decoration: line-through;
+  margin-left: 2%;
+  color: rgb(139, 141, 146);
+}
+.button {
+  bottom: 0;
+  width: 65%;
+  border: 2px solid rgb(139, 141, 146);
+  color: rgb(139, 141, 146);
+  padding: 3%;
+  border-radius: 5px/5px;
+  transition: all 1s;
+}
+.button:hover {
+  scale: 1.1;
+  cursor: pointer;
+  border: 2px solid rgb(22, 160, 133);
+  background-color: rgb(22, 160, 133);
+  color: white;
+}
+.greenCircle {
+  position: absolute;
+  display: inline-block;
+}
+.greenCircle {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid rgb(22, 160, 133);
+  background-color: rgb(22, 160, 133);
+  color: white;
+  border-radius: 50%;
+  padding: 1%;
+  width: 13px;
+  height: 13px;
+  padding: 1em;
+  line-height: 15px;
+  font-size: 70%;
+  font-weight: bold;
+  left: 5%;
+  top: 5%;
+}
+.inGreen {
+  text-align: center;
+  margin-left: -50%;
+}
+.redCircle {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid rgb(215, 41, 42);
+  background-color: rgb(215, 41, 42);
+  color: white;
+  border-radius: 50%;
+  padding: 1%;
+  width: 13px;
+  height: 13px;
+  padding: 1em;
+  line-height: 15px;
+  font-size: 70%;
+  font-weight: bold;
+  right: 5%;
+  top: 5%;
+}
+.inRed {
+  text-align: center;
+  margin-left: -40%;
+}
