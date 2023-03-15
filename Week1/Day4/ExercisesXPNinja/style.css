@@ -126,6 +126,10 @@ footer {
   border-radius: 35px/35px;
   margin-top: 5%;
   width: 25%;
+  cursor: pointer;
+}
+.botton:hover {
+  border-color: gray;
 }
 .register {
   position: relative;
