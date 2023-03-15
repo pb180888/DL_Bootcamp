@@ -9,13 +9,29 @@ nav {
   top: 0;
   padding: 1%;
 }
-nav a {
+.products {
   color: white;
   display: inline;
   text-decoration: none;
   position: absolute;
   right: 5%;
   top: 40%;
+}
+.signup {
+  color: white;
+  display: inline;
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  right: 18%;
+}
+.login {
+  color: white;
+  display: inline;
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  right: 27%;
 }
 i {
   width: 120%;

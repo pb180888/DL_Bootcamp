@@ -1,6 +1,7 @@
 body {
   width: 100%;
   font-family: sans-serif;
+  text-align: center;
 }
 section {
   text-align: center;
@@ -15,12 +16,12 @@ section {
 
 .firstDiv {
   /* border: 2px solid black; */
-  width: 99%;
   height: 70%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
 .picOne {
   background-image: url(./pics/image1.png);
 }
@@ -127,3 +128,77 @@ section {
   text-align: center;
   margin-left: -40%;
 }
+.hidden div {
+  visibility: hidden;
+  transition: all 0s;
+}
+.hidden:hover div {
+  visibility: visible;
+}
+.addTo {
+  background-color: black;
+  display: inline;
+  color: white;
+  position: absolute;
+  width: 50px;
+  top: -60%;
+  left: 60%;
+  font-size: 0.8rem;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: inline-flex;
+}
+
+.fa-solid,
+.fa-regular {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  padding: 12%;
+  margin: 8%;
+  padding-bottom: 4%;
+}
+.fa-solid:hover,
+.fa-regular:hover {
+  background-color: rgb(22, 160, 133);
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  .mainDiv {
+    display: block;
+    width: 95%;
+    height: 600px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .mainDiv {
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200) {
+  .mainDiv {
+    width: 18%;
+    height: 480px;
+    display: inline-block;
+    margin: 1%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .mainDiv {
+    width: 13%;
+    height: 450px;
+    display: inline-block;
+    margin: 1%;
+  }
+  section {
+    display: inline;
+  }
+} ;
