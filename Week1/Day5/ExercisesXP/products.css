@@ -128,12 +128,11 @@ section {
   text-align: center;
   margin-left: -40%;
 }
-.hidden div {
-  visibility: hidden;
-  transition: all 0s;
+.hidden {
+  display: none;
 }
-.hidden:hover div {
-  visibility: visible;
+.firstDiv:hover .hidden {
+  display: inline;
 }
 .addTo {
   background-color: black;
@@ -150,6 +149,9 @@ section {
   top: 50%;
   left: 10%;
   display: inline-flex;
+}
+i {
+  cursor: pointer;
 }
 
 .fa-solid,
