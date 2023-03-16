@@ -88,8 +88,11 @@ img {
     background-color: yellow;
     color: black;
   }
+
   body {
+    background-image: url(Thor1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .img {
     width: 13%;
@@ -109,6 +112,11 @@ img {
     top: -2%;
     right: 4%;
   }
+  body {
+    background-image: url(Thor1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   header {
@@ -119,6 +127,11 @@ img {
     background-color: lightgreen;
     color: black;
     height: 80px;
+  }
+  body {
+    background-image: url(ThorGreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .img {
     top: -4%;
@@ -133,6 +146,9 @@ img {
   .img {
     width: 10%;
     top: -5%;
+  }
+  body {
+    background-image: url(/Week1/Day5/DailyChallenge/ThorRed.jpg);
   }
 }
 @media all and (min-width: 1200px) {
