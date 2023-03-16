@@ -78,26 +78,6 @@ img {
 .margin {
   margin: 0 1%;
 }
-@media all and (min-width: 600px) and (max-width: 768px) {
-  header {
-    margin-top: 15%;
-    font-size: 35px;
-    width: 60%;
-  }
-  nav {
-    background-color: yellow;
-    color: black;
-  }
-
-  body {
-    background-image: url(Thor1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .img {
-    width: 13%;
-  }
-}
 @media all and (max-width: 600px) {
   header {
     font-size: 35px;
@@ -113,11 +93,32 @@ img {
     right: 4%;
   }
   body {
-    background-image: url(Thor1.jpg);
+    background-image: url(Thor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
+@media all and (min-width: 600px) and (max-width: 768px) {
+  header {
+    margin-top: 15%;
+    font-size: 35px;
+    width: 60%;
+  }
+  nav {
+    background-color: yellow;
+    color: black;
+  }
+
+  body {
+    background-image: url(Thor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img {
+    width: 13%;
+  }
+}
+
 @media all and (min-width: 768px) and (max-width: 992px) {
   header {
     font-size: 25px;
