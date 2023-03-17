@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  margin: 0;
+}
+.main {
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(192, 247, 215);
+  border: 4px solid rgb(39, 199, 107);
+  display: flex;
+  position: relative;
+}
+.section1 {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  margin-top: 3%;
+  margin-left: 5%;
+  padding: 5%;
+}
+.divMain {
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  padding: 1%;
+  padding-right: 1.6%;
+}
+.divOne,
+.divThree,
+.divTwo {
+  background-color: rgb(135, 209, 238);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divOne,
+.divThree {
+  width: 99%;
+  height: 32%;
+}
+.divTwo {
+  width: 25%;
+  height: 32%;
+}
