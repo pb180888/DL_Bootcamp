@@ -82,15 +82,11 @@ section {
   background-color: rgb(22, 160, 133);
   color: white;
 }
-.greenCircle {
+.greenCircle,
+.redCircle {
+  cursor: default;
   position: absolute;
   display: inline-block;
-}
-.greenCircle {
-  position: absolute;
-  display: inline-block;
-  border: 1px solid rgb(22, 160, 133);
-  background-color: rgb(22, 160, 133);
   color: white;
   border-radius: 50%;
   padding: 1%;
@@ -100,29 +96,21 @@ section {
   line-height: 15px;
   font-size: 70%;
   font-weight: bold;
-  left: 5%;
   top: 5%;
+}
+.greenCircle {
+  border: 1px solid rgb(22, 160, 133);
+  background-color: rgb(22, 160, 133);
+  left: 5%;
 }
 .inGreen {
   text-align: center;
   margin-left: -50%;
 }
 .redCircle {
-  position: absolute;
-  display: inline-block;
   border: 1px solid rgb(215, 41, 42);
   background-color: rgb(215, 41, 42);
-  color: white;
-  border-radius: 50%;
-  padding: 1%;
-  width: 13px;
-  height: 13px;
-  padding: 1em;
-  line-height: 15px;
-  font-size: 70%;
-  font-weight: bold;
   right: 5%;
-  top: 5%;
 }
 .inRed {
   text-align: center;
