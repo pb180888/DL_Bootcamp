@@ -1,0 +1,87 @@
+.background {
+  margin: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(192, 247, 215);
+  border: 4px solid rgb(39, 199, 107);
+  position: relative;
+}
+.whiteContainer {
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+.innerContainer {
+  width: 80%;
+  height: 100%;
+  /* border: 2px solid black; */
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1%;
+  grid-template-areas:
+    "header header header header header header header"
+    "hero hero maincontent  maincontent maincontent maincontent maincontent"
+    "hero hero maincontent  maincontent maincontent maincontent maincontent"
+    "sidebar sidebar maincontent maincontent maincontent maincontent maincontent"
+    "sidebar sidebar maincontent maincontent maincontent maincontent maincontent"
+    "sidebar sidebar extracontent extracontent extracontent extracontent extracontent"
+    "sidebar sidebar extracontent extracontent extracontent extracontent extracontent"
+    "relatedImg relatedImg relatedImg relatedImg relatedImg relatedPosts relatedPosts"
+    "relatedImg relatedImg relatedImg relatedImg relatedImg relatedPosts relatedPosts"
+    "footer footer footer footer footer footer footer";
+}
+.header,
+.hero,
+.sidebar,
+.mainContent,
+.extraContent,
+.relatedImg,
+.relatedPosts,
+.footer {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header {
+  background-color: rgb(84, 213, 235);
+  grid-area: header;
+}
+.hero {
+  background-color: rgb(215, 201, 227);
+  grid-area: hero;
+}
+.sidebar {
+  background-color: rgb(159, 194, 99);
+  grid-area: sidebar;
+}
+
+.mainContent {
+  background-color: rgb(245, 197, 50);
+  grid-area: maincontent;
+}
+.extraContent {
+  background-color: rgb(137, 137, 137);
+  grid-area: extracontent;
+}
+.relatedImg {
+  background-color: rgb(43, 182, 115);
+  grid-area: relatedImg;
+}
+.relatedPosts {
+  background-color: rgb(243, 204, 222);
+  grid-area: relatedPosts;
+}
+.footer {
+  background-color: rgb(255, 164, 0);
+  grid-area: footer;
+}
