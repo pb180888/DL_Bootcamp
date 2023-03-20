@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3%;
+  padding-top: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-areas:
+    "header header header"
+    "firstelement secondelement thirdelement";
+}
+.header {
+  padding: 3%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  grid-area: header;
+}
+/* .gridSection {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: gridsection;
+} */
+.firstElement {
+  grid-area: firstelement;
+}
+.secondElement {
+  grid-area: secondelement;
+}
+.thirdElement {
+  grid-area: thirdelement;
+}
+.firstElement,
+.secondElement,
+.thirdElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+p {
+  color: rgb(92, 106, 196);
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+span {
+  font-size: 0.6em;
+  color: rgb(139, 150, 160);
+}
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.size {
+  position: relative;
+  width: 43vh;
+  height: 39vh;
+  /* border: 2px solid black; */
+  margin: 3%;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    "firstInner"
+    "secondInner";
+}
+.first {
+  margin-top: 6%;
+}
+.second {
+  margin-top: 12%;
+}
+.third {
+  margin-top: 8%;
+}
+.firstInner {
+  grid-area: firstInner;
+  padding: 5%;
+  color: rgb(139, 150, 160);
+}
+.secondInner {
+  grid-area: secondInner;
+  color: white;
+  z-index: 0;
+}
+.firstColor {
+  background-color: rgb(251, 139, 138);
+}
+.secondColor {
+  background-color: rgb(92, 106, 196);
+}
+.thirdColor {
+  background-color: rgb(73, 193, 191);
+}
+.innerFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+img {
+  z-index: 1;
+  position: absolute;
+  width: 17%;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.firstImg {
+  left: 42%;
+  top: 50%;
+}
+.secondImg {
+  top: 50%;
+  left: 43%;
+}
+.thirdImg {
+  top: 50%;
+  left: 43%;
+}
+@media all and (max-width: 400px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+} ;

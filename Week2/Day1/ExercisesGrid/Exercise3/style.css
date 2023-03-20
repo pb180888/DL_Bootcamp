@@ -53,7 +53,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 2%;
+  grid-gap: 1.7%;
   grid-area: main;
   grid-template-areas: "article1 article2" "article3 article3";
 }

@@ -119,6 +119,7 @@ section {
 .hidden {
   display: none;
 }
+
 .firstDiv:hover .hidden {
   display: inline;
 }
