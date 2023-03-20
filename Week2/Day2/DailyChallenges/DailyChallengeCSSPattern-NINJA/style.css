@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+}
+.cub {
+  width: 6vh;
+  height: 6vh;
+  margin: 0.1%;
+}
+.firstGrid {
+  padding: 0.3%;
+  width: 89%;
+  background-color: white;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+.brown {
+  background-color: rgb(168, 74, 0);
+}
+.orange {
+  background-color: rgb(255, 113, 0);
+  grid-area: o;
+}
+.peach {
+  background-color: rgb(255, 178, 109);
+  grid-area: p;
+}
