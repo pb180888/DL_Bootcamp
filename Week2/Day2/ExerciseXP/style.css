@@ -64,7 +64,8 @@ span {
   position: relative;
   width: 43vh;
   height: 39vh;
-  /* border: 2px solid black; */
+  border-radius: 4px/4px;
+  overflow: hidden;
   margin: 3%;
   display: grid;
   grid-template-rows: 60% 40%;
@@ -84,6 +85,7 @@ span {
 .firstInner {
   grid-area: firstInner;
   padding: 5%;
+  background-color: white;
   color: rgb(139, 150, 160);
 }
 .secondInner {
