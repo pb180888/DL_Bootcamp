@@ -1,0 +1,19 @@
+.yellowCub {
+  width: 15vh;
+  height: 15vh;
+  background-color: yellow;
+  border: 2px solid black;
+  margin: 5%;
+  grid-area: yellowCub;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstFlex,
+.thirdFlex {
+  display: flex;
+  flex-direction: column;
+}
