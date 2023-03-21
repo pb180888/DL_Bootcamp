@@ -2,20 +2,42 @@ body {
   background-color: rgb(241, 241, 241);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.one {
+  grid-template-rows: 1/2;
+}
+.two {
+  grid-template-rows: 2/3;
+}
+.three {
+  grid-template-rows: 3/4;
+}
+.one,
+.two,
+.three {
+  display: flex;
+  justify-content: center;
 }
 .cub {
-  width: 6vh;
-  height: 6vh;
-  margin: 0.1%;
+  width: 5vh;
+  height: 5vh;
+  margin: 10%;
 }
-.firstGrid {
-  padding: 0.3%;
-  width: 89%;
-  background-color: white;
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+.cub1 {
+  width: 5.4vh;
+  height: 5.4vh;
+}
+.divD {
+  margin: 0.2%;
+}
+.firstFlex {
+  display: flex;
+  margin: 1%;
+}
+.flex {
+  display: flex;
 }
 
 .brown {
@@ -28,4 +50,29 @@ body {
 .peach {
   background-color: rgb(255, 178, 109);
   grid-area: p;
+}
+
+.gray1 {
+  background-color: rgb(204, 204, 204);
+}
+.gray2 {
+  background-color: rgb(153, 153, 153);
+}
+.gray3 {
+  background-color: rgb(102, 102, 102);
+}
+.gray4 {
+  background-color: rgb(51, 51, 51);
+}
+.lightRed {
+  background-color: rgb(230, 127, 126);
+}
+.red {
+  background-color: rgb(216, 62, 59);
+}
+.white {
+  background-color: white;
+}
+.margin {
+  margin-left: 5%;
 }
