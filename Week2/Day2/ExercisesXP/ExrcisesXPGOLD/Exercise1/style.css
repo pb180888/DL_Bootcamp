@@ -55,6 +55,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 p {
   color: white;
@@ -166,6 +167,19 @@ select {
 ul {
   list-style: none;
   padding-left: 0;
+}
+img {
+  width: 10vh;
+  border: 0.5vh solid transparent;
+  border-radius: 100px;
+  background: linear-gradient(45deg, #2488b3, #fd9220) border-box;
+  transition: all 1s;
+  position: absolute;
+  right: 14%;
+  bottom: -6%;
+}
+img:hover {
+  scale: 1.2;
 }
 @media all and (max-width: 768px) {
   .mainSection {
