@@ -28,8 +28,15 @@ label {
 .backgroundWhite {
   background-color: white;
 }
+.font {
+  font-size: 5vh;
+}
 @media all and (max-width: 400px) {
   .main {
     width: 100%;
+  }
+  .font {
+    font-size: 4vh;
+    text-align: center;
   }
 }
