@@ -1,0 +1,56 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+  background-image: url(./header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  text-align: center;
+}
+.fontColor {
+  color: white;
+}
+.button {
+  border-radius: 25px/25px;
+  background-color: rgb(224, 69, 58);
+}
+.button:hover {
+  background-color: rgb(201, 85, 43);
+}
+.flex {
+  display: flex;
+}
+.marginContainer {
+  margin-top: 33vh;
+}
+.marginButton {
+  margin-top: 23vh;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1200px) {
+  .marginContainer {
+    margin-top: 30vh;
+  }
+  .marginButton {
+    margin-top: 22vh;
+  }
+}
+@media all and (min-width: 1300px) {
+  .marginContainer {
+    margin-top: 28vh;
+  }
+  .marginButton {
+    margin-top: 28vh;
+  }
+} ;

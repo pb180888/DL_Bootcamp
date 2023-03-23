@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(235, 234, 235);
+  margin: 0;
+}
+input {
+  width: 100%;
+}
+.marginTop {
+  margin-top: 2%;
+}
+label {
+  margin-bottom: 0;
+}
+.main {
+  width: 50%;
+  margin-top: 20vh;
+}
+.width {
+  width: 50%;
+}
+.marginBottom {
+  margin-bottom: 9%;
+}
+.borderRadius {
+  border-radius: 5px/5px;
+  padding: 0;
+}
+.backgroundWhite {
+  background-color: white;
+}
+@media all and (max-width: 400px) {
+  .main {
+    width: 100%;
+  }
+}
