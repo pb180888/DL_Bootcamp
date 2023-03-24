@@ -1,0 +1,73 @@
+.padding {
+  padding: 0;
+  padding-left: 10vh;
+  height: 7vh;
+}
+.background {
+  background-color: black;
+  color: white;
+}
+.backgroundButton {
+  background-color: rgb(92, 184, 92);
+  color: white;
+}
+.width {
+  width: 25vh;
+}
+.marginPassword {
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+.marginTop {
+  margin-top: 4vh;
+}
+.marginTop1 {
+  margin-top: 2vh;
+}
+.hoverNone {
+  color: rgb(119, 119, 119);
+}
+.padding1 {
+  padding: 5vh 10vh;
+  padding-top: 11vh;
+}
+.back {
+  background-color: rgb(238, 238, 238);
+}
+.backgroundButton1 {
+  background-color: rgb(51, 121, 183);
+}
+.styleButton {
+  background-color: white;
+  border: 1px solid black;
+}
+.border3 {
+  background-color: rgb(119, 119, 119);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh;
+  margin-left: 0.2vh;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  max-width: 8px;
+  max-height: 8px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+.marginRight {
+  margin-right: 1vh;
+}
+.lightBack {
+  background-color: rgb(91, 192, 222);
+}
+@media all and (max-width: 400px) {
+  .hover {
+    display: flex;
+  }
+}
