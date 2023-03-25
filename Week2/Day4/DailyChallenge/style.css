@@ -44,3 +44,6 @@ p {
   width: 31vh;
   border-color: white;
 }
+.leftMargin {
+  margin-left: 0.3vh;
+}
