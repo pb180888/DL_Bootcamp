@@ -10,6 +10,9 @@ h6,
 a {
   font-family: "Raleway";
 }
+i {
+  margin: 1vh;
+}
 .myPhoto {
   width: 30vh;
   float: left;
