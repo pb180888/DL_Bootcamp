@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway";
+}
+.myPhoto {
+  width: 30vh;
+  float: left;
+  border-radius: 5px/5px;
+  margin-right: 2vh;
+}
+@media all and (max-width: 400px) {
+  .myPhoto {
+    float: none;
+    margin-bottom: 1vh;
+  }
+}
