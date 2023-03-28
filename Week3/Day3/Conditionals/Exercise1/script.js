@@ -15,7 +15,7 @@ else if (age === 18) {
   alert(`Congratulations on your first year of driving. Enjoy the ride!`);
 }
 // IF they say they are over 18, respond with: "Powering On. Enjoy the ride!"
-else if (age > 18) {
+else {
   alert(
     `IF they say they are over 18, respond with: "Powering On. Enjoy the ride!`
   );
