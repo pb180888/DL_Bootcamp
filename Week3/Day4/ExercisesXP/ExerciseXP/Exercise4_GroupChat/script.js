@@ -21,5 +21,5 @@ if (users.length === 0) {
 } else if (users.length === 2) {
   console.log(`${users[0]} and ${users[1]} are online`);
 } else if (users.length === 5) {
-  console.log(`${users[0]}, ${users[1]} and 3 are online`);
+  console.log(`${users[0]}, ${users[1]} and 3 more are online`);
 }
