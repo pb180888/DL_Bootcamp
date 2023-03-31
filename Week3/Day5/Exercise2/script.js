@@ -11,9 +11,9 @@ for (let i = 0; i < names.length; i++) {
 
     // if the item is a string, check if its first letter is in uppercase. If not, change it to uppercase and then display the name.
     if (names[i].charAt(0) === names[i].charAt(0).toUpperCase()) {
-      //   console.log(names[i]);
+      // console.log(names[i]);
     } else {
-      names[i] === names[i].charAt(0).toUpperCase() + names[i].slice(1);
+      names[i] === names[i][0].toUpperCase() + names[i].slice(1);
       console.log(names[i]);
     }
   }
