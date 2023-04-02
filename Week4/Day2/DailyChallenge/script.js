@@ -14,22 +14,48 @@ console.log(arrWords, typeof arrWords);
 //     you will transform it to : ["Hello", "World", "in", "a", "frame"]
 //     that will get displayed as:
 
-function frame(array) {
+function maxLength(array) {
   let maxLength = 0;
-  let star = "*";
-  let line = " ";
   for (let i = 0; i < array.length; i++) {
-    console.log(array[i].length);
-
     if (maxLength < array[i].length) {
       maxLength = array[i].length;
     }
-    console.log(`maxLength = ${maxLength} `);
-    for (let y = 0; y < maxLength; y++) {
-      line = line + star;
-      console.log(line);
+  }
+  return maxLength;
+}
+console.log(maxLength(arrWords));
+
+function space(array, maxLength) {
+  for (let i = 0; i < array.length; i++) {
+    let difference = 0;
+    let space = " ";
+    if (array[i].length < maxLength) {
+      difference = maxLength - array[i].length;
     }
+    for (let y = 0; y < difference; y++) {
+      space = space + " ";
+    }
+
+    console.log((array[i] = array[i] + space));
   }
 }
+space(arrWords, maxLength(arrWords));
 
-frame(arrWords);
+function star(maxLength) {
+  let line = "";
+  let star = "*";
+  for (let i = 0; i < maxLength + 4; i++) {
+    line = line + star;
+  }
+  return line;
+}
+console.log(star(maxLength(arrWords)));
+
+function Frame(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(`* ${array[i]} *`);
+  }
+}
+Frame(arrWords, maxLength(arrWords));
+
+console.log(star(maxLength(arrWords)));
