@@ -1,6 +1,6 @@
 // 1. Prompt the user for several words (separated by commas).
 
-let severalWords = prompt("Enter several word separated by commas");
+let severalWords = prompt("Enter several words separated by commas");
 console.log(severalWords);
 // 2. Put the words into an array.
 
