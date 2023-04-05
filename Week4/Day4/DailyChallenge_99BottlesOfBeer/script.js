@@ -48,16 +48,16 @@ ${numberOfBottles - 1} bottles of beer on the wall`;
 
       minusBottles = minusBottles + i;
       plusTakeOneMoreTime = plusTakeOneMoreTime + 1;
-      bigWord = numberOfBottles - minusBottles - plusTakeOneMoreTime;
-      if (bigWord <= 0) {
-        bigWord = 0;
+      bigFormula = numberOfBottles - minusBottles - plusTakeOneMoreTime;
+      if (bigFormula <= 0) {
+        bigFormula = 0;
       }
       song = `${numberOfBottles - minusBottles} bottles of beer on the wall \
         ${numberOfBottles - minusBottles} bottles of beer \
         Take ${plusTakeOneMoreTime} down, pass ${word} around \
-        ${bigWord} bottles of beer on the wall`;
+        ${bigFormula} bottles of beer on the wall`;
       console.log(song);
-    } else if (bigWord <= 0) {
+    } else if (bigFormula <= 0) {
       break;
     }
   }
