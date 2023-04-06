@@ -24,15 +24,11 @@
 
 function bottlesOfBeer() {
   let numberOfBottles = 0;
-  let takeOneMoreTime = 1;
   let word = "";
   do {
     numberOfBottles = Number(prompt("Enter the number of bottles"), 0);
   } while (!Number(numberOfBottles));
-  let song = `${numberOfBottles} bottles of beer on the wall \
-${numberOfBottles} bottles of beer \
-Take ${takeOneMoreTime} down, pass ${word} around \
-${numberOfBottles - 1} bottles of beer on the wall`;
+  let song = "";
   let minusBottles = 0;
   let plusTakeOneMoreTime = 0;
   for (let i = 0; i < numberOfBottles; i++) {
