@@ -36,12 +36,7 @@ function bottlesOfBeer() {
       numberOfBottles - minusBottles > 1 &&
       numberOfBottles - minusBottles >= plusTakeOneMoreTime
     ) {
-      if (plusTakeOneMoreTime < 1) {
-        word = "it";
-      } else {
-        word = "them";
-      }
-
+      plusTakeOneMoreTime < 1 ? (word = "it") : (word = "them");
       minusBottles = minusBottles + i;
       plusTakeOneMoreTime = plusTakeOneMoreTime + 1;
       bigFormula = numberOfBottles - minusBottles - plusTakeOneMoreTime;
