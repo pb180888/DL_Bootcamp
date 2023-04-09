@@ -1,16 +1,16 @@
 // 1. Create an array which value is the planets of the solar system.
 
-const planetsOfSolarSystem = [
-  "Mercury",
-  "Venus",
-  "Earth",
-  "Mars",
-  "Ceres",
-  "Jupiter",
-  "Saturn",
-  "Uranus",
-  "Neptune",
-];
+// const planetsOfSolarSystem = [
+//   "Mercury",
+//   "Venus",
+//   "Earth",
+//   "Mars",
+//   "Ceres",
+//   "Jupiter",
+//   "Saturn",
+//   "Uranus",
+//   "Neptune",
+// ];
 
 // 2. For each planet in the array, create a <div> using createElement. This div should have a class named "planet".
 
