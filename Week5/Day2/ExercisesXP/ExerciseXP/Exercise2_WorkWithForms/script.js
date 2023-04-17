@@ -44,13 +44,12 @@ const mainAction = function () {
     }
     console.log(textForLi);
   }
+  console.log(document.querySelector(".usersAnswer"));
 };
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
-  if (mainAction()) {
-    console.log(document.querySelector("ul"));
-  }
+  if (mainAction());
 });
 // The output should be :
 // <ul class="usersAnswer">
