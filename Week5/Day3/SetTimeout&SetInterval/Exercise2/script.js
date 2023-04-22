@@ -58,4 +58,4 @@ function hello() {
   var timer = setInterval(countItDown, 1000);
 }
 
-setTimeout(hello, 1000);
+setTimeout(hello, 1500);
