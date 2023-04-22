@@ -11,7 +11,6 @@ function animatePassing() {
   let start = Date.now(); // start date
   let timer = setInterval(function () {
     let timePassed = Date.now() - start;
-    // console.log(timePassed);
     animate.style.left = timePassed / 1 + "px";
     if (timePassed >= widthContainer - widthAnimate) {
       clearInterval(timer);
