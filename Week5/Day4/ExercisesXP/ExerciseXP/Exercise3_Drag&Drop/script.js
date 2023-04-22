@@ -30,8 +30,6 @@ function drop(event) {
 function dragEnter(event) {
   event.target.style.backgroundColor = "grey";
   event.target.style.border = "solid 3px black";
-  const textBox = document.createTextNode("I'm here");
-  box.appendChild(textBox);
 }
 
 function dragLeave(event) {

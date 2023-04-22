@@ -7,16 +7,14 @@ const container = document.querySelector("#container");
 const widthContainer = container.clientWidth;
 const widthAnimate = animate.clientWidth;
 console.log(widthContainer);
-function animatePassing() {
-  let start = Date.now(); // start date
-  let timer = setInterval(function () {
-    let timePassed = Date.now() - start;
-    animate.style.left = timePassed / 1 + "px";
-    if (timePassed >= widthContainer - widthAnimate) {
-      clearInterval(timer);
-    }
-  });
-}
+let distance = 0;
 function myMove() {
-  animatePassing();
+  function moving() {
+    distance = distance + 1;
+    animate.style.left = distance + "px";
+    if (distance > widthContainer - widthAnimate) {
+      clearInterval(interval);
+    }
+  }
+  let interval = setInterval(moving, 10);
 }
