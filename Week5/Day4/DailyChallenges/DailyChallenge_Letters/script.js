@@ -7,7 +7,7 @@ form.appendChild(input);
 document.body.appendChild(form);
 
 // 2. Hint: use one of the following events to remove any character that is not a letter
-var hello = form.addEventListener("submit", function (event) {
+var checkInput = form.addEventListener("submit", function (event) {
   event.preventDefault();
   if (input.value.length < 1) {
     alert("Empty");
@@ -28,7 +28,7 @@ var hello = form.addEventListener("submit", function (event) {
 });
 input.addEventListener("keydown", function (event) {
   if (event.code === "Enter") {
-    hello;
+    checkInputgit;
   }
 });
 
