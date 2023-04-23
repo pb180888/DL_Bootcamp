@@ -9,6 +9,7 @@ document.body.appendChild(form);
 // 2. Hint: use one of the following events to remove any character that is not a letter
 var checkInput = form.addEventListener("submit", function (event) {
   event.preventDefault();
+  var valueHere;
   if (input.value.length < 1) {
     alert("Empty");
   }
@@ -21,10 +22,11 @@ var checkInput = form.addEventListener("submit", function (event) {
         (input.value[i] > "Z" && input.value[i] < "a") ||
         input.value[i] > "z"
       ) {
+        valueHere = input.value[i];
         console.log(input.value[i]);
         let indexHere = input.value.indexOf(input.value[i]);
         console.log(indexHere);
-        input.value = input.value.substring(indexHere, " ");
+        input.value = input.value.replace(valueHere, "");
       }
     }
   }
