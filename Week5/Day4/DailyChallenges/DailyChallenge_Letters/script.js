@@ -17,9 +17,9 @@ var checkInput = form.addEventListener("submit", function (event) {
   } else {
     for (let i = 0; i < input.value.length; i++) {
       if (
-        !(input.value[i] < "A") ||
-        (!(input.value[i] > "Z") && !(input.value[i] < "a")) ||
-        !(input.value[i] > "z")
+        input.value[i] < "A" ||
+        (input.value[i] > "Z" && input.value[i] < "a") ||
+        input.value[i] > "z"
       ) {
         input.value[i].remove();
       }
