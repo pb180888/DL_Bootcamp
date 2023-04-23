@@ -21,7 +21,10 @@ var checkInput = form.addEventListener("submit", function (event) {
         (input.value[i] > "Z" && input.value[i] < "a") ||
         input.value[i] > "z"
       ) {
-        input.value[i].remove();
+        console.log(input.value[i]);
+        let indexHere = input.value.indexOf(input.value[i]);
+        console.log(indexHere);
+        input.value = input.value.substring(indexHere, " ");
       }
     }
   }
