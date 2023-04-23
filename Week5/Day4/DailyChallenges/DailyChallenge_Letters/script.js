@@ -28,7 +28,7 @@ var checkInput = form.addEventListener("submit", function (event) {
 });
 input.addEventListener("keydown", function (event) {
   if (event.code === "Enter") {
-    checkInputgit;
+    checkInput;
   }
 });
 
