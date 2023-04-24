@@ -24,11 +24,9 @@ var checkInput = form.addEventListener("submit", function (event) {
       ) {
         valueHere = input.value[i];
         console.log(input.value[i]);
-        let indexHere = input.value.indexOf(input.value[i]);
-        console.log(indexHere);
-        input.value = input.value.replace(valueHere, "");
       }
     }
+    input.value = input.value.replace(valueHere, "");
   }
 });
 input.addEventListener("keydown", function (event) {
