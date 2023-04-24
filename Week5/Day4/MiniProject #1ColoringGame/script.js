@@ -1,5 +1,4 @@
 const picture = document.getElementById("picture");
-
 function fillPicture() {
   for (let index = 0; index < 1440; index++) {
     const div = document.createElement("div");
@@ -103,19 +102,27 @@ clearButton.addEventListener("click", function () {
   colorPaint("white");
 });
 const everyPartOfPicture = document.querySelectorAll("#picture > div");
-let mousedown = false;
-body.addEventListener("mousedown", function (event) {
-  mousedown = true;
-});
-body.addEventListener("mouseup", function (event) {
-  mousedown = false;
-});
+// let mousedown = false;
+// function colorPaint() {}
+// body.addEventListener("mousedown", function (event) {
+//   mousedown = true;
+// });
+// body.addEventListener("mouseup", function (event) {
+//   mousedown = false;
+// });
+// function colorPaint(color) {
+//   if (mousedown) {
+//     for (let i = 0; i < everyPartOfPicture.length; i++) {
+//       everyPartOfPicture[i].addEventListener("mouseover", function () {
+//         everyPartOfPicture[i].style.backgroundColor = `${color}`;
+//       });
+//     }
+//   }
+// }
 function colorPaint(color) {
-  if (mousedown) {
-    for (let i = 0; i < everyPartOfPicture.length; i++) {
-      everyPartOfPicture[i].addEventListener("mouseover", function () {
-        everyPartOfPicture[i].style.backgroundColor = `${color}`;
-      });
-    }
+  for (let i = 0; i < everyPartOfPicture.length; i++) {
+    everyPartOfPicture[i].addEventListener("mouseover", function () {
+      everyPartOfPicture[i].style.backgroundColor = `${color}`;
+    });
   }
 }
