@@ -3,7 +3,7 @@ function fillPicture() {
   for (let index = 0; index < 1440; index++) {
     const div = document.createElement("div");
     div.style.width = "2.6vh";
-    div.style.height = "4vh";
+    div.style.height = "3.8vh";
     div.style.backgroundColor = "white";
     picture.appendChild(div);
   }
@@ -99,8 +99,30 @@ clearButton.addEventListener("click", function () {
   for (let i = 0; i < everyPartOfPicture.length; i++) {
     everyPartOfPicture[i].style.backgroundColor = "white";
   }
+  colorPaint("white");
 });
 const everyPartOfPicture = document.querySelectorAll("#picture > div");
+// var click;
+// document.addEventListener("click", function (e) {
+//   if (e) {
+//     click = false;
+//   }
+// });
+// function clickColor(color) {
+//   for (let i = 0; i < everyPartOfPicture.length; i++) {
+//     everyPartOfPicture[i].addEventListener(
+//       "click",
+//       function () {
+//         for (let i = 0; i < everyPartOfPicture.length; i++) {
+//           everyPartOfPicture[i].addEventListener("mouseover", function () {
+//             everyPartOfPicture[i].style.backgroundColor = `${color}`;
+//           });
+//         }
+//       },
+//       false
+//     );
+//   }
+// }
 
 function colorPaint(color) {
   for (let i = 0; i < everyPartOfPicture.length; i++) {
