@@ -1,4 +1,5 @@
 const picture = document.getElementById("picture");
+
 function fillPicture() {
   for (let index = 0; index < 1440; index++) {
     const div = document.createElement("div");
@@ -106,7 +107,9 @@ let mousedown = false;
 body.addEventListener("mousedown", function (event) {
   mousedown = true;
 });
-
+body.addEventListener("mouseup", function (event) {
+  mousedown = false;
+});
 function colorPaint(color) {
   if (mousedown) {
     for (let i = 0; i < everyPartOfPicture.length; i++) {
