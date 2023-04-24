@@ -102,32 +102,17 @@ clearButton.addEventListener("click", function () {
   colorPaint("white");
 });
 const everyPartOfPicture = document.querySelectorAll("#picture > div");
-// var click;
-// document.addEventListener("click", function (e) {
-//   if (e) {
-//     click = false;
-//   }
-// });
-// function clickColor(color) {
-//   for (let i = 0; i < everyPartOfPicture.length; i++) {
-//     everyPartOfPicture[i].addEventListener(
-//       "click",
-//       function () {
-//         for (let i = 0; i < everyPartOfPicture.length; i++) {
-//           everyPartOfPicture[i].addEventListener("mouseover", function () {
-//             everyPartOfPicture[i].style.backgroundColor = `${color}`;
-//           });
-//         }
-//       },
-//       false
-//     );
-//   }
-// }
+let mousedown = false;
+body.addEventListener("mousedown", function (event) {
+  mousedown = true;
+});
 
 function colorPaint(color) {
-  for (let i = 0; i < everyPartOfPicture.length; i++) {
-    everyPartOfPicture[i].addEventListener("mouseover", function () {
-      everyPartOfPicture[i].style.backgroundColor = `${color}`;
-    });
+  if (mousedown) {
+    for (let i = 0; i < everyPartOfPicture.length; i++) {
+      everyPartOfPicture[i].addEventListener("mouseover", function () {
+        everyPartOfPicture[i].style.backgroundColor = `${color}`;
+      });
+    }
   }
 }
