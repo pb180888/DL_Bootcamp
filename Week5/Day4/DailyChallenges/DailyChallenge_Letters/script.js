@@ -25,7 +25,7 @@ var checkInput = form.addEventListener("submit", function (event) {
         valueHere = input.value[i];
         console.log(input.value[i]);
       }
-    }
+    
     input.value = input.value.replace(valueHere, "");
   }
 });
