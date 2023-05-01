@@ -9,3 +9,7 @@ function twoNumbers(a, b, operator) {
   console.log(c);
 }
 twoNumbers(arr[0], arr[4], true);
+arr.forEach((number, index) => {
+  console.log("number: ", number); // logs each element of the array
+  console.log("index: ", index); // logs each index of the array
+});
