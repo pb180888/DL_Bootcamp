@@ -28,7 +28,7 @@ const gameInfo = [
 // 1. Create an array using forEach that contains all the usernames from the gameInfo array, add an exclamation point (ie. “!”) to the end of every username.
 // The new array should look like this :
 // const usernames = ["john!", "becky!", "susy!", "tyson!"]
-let usernames = [];
+const usernames = [];
 gameInfo.forEach((item) => usernames.push(`${item.username}!`));
 console.log(usernames);
 
