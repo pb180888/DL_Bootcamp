@@ -24,3 +24,6 @@ const resultRabbit = rabbit.padStart(9);
 console.log(startLine);
 console.log(resultTurtle);
 console.log(resultRabbit);
+
+turtle = turtle.trim().padEnd(9, "=");
+console.log(turtle);
