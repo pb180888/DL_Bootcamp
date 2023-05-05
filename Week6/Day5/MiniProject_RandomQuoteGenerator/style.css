@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(176, 158, 153);
+}
+.genQoutes {
+  margin: 5%;
+  background-color: rgb(216, 207, 204);
+  height: 80vh;
+  overflow: hidden;
+}
+.generateQuote {
+  height: 7vh;
+  width: 20vh;
+  font-size: 1.2em;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 2%;
+  background-color: rgb(100, 182, 172);
+  border: 1px solid black;
+  box-shadow: 5px 2px 2px rgb(108, 165, 230);
+  color: white;
+}
+.placeQuote {
+  font-family: fantasy;
+  font-size: 1.5rem;
+  color: rgb(108, 118, 129);
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
