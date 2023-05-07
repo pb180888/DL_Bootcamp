@@ -28,10 +28,9 @@ const arrObjects = [
 ];
 let max = 0;
 for (let i = 0; i < arrObjects.length; i++) {
-  console.log(arrObjects[i].id);
   max < arrObjects[i].id ? (max = arrObjects[i].id) : "";
 }
-console.log(max);
+
 // 4. When the “Generate Quote” button is pressed, retrieve randomly a quote (ie. an object), and display it in the DOM - like the image above.
 arrMain = [];
 arrQuote = [];
