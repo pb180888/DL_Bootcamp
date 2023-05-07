@@ -26,18 +26,12 @@ const arrObjects = [
     quote: `"If you are in the minority and even in the singular it does not mean that you are insane."`,
   },
 ];
-// let max = 0;
-// for (let i = 0; i < arrObjects.length; i++) {
-//   console.log(arrObjects[i].id);
-//   arrObjects[i].id > arrObjects[i + 1].id
-//     ? (max = arrObjects[i + 1].id)
-//     : (max = arrObjects[i].id);
-//   //   if (arrObjects[i].id < arrObjects[i + 1].id) {
-//   //     max = arrObjects[i + 1].id;
-//   //   } else max = arrObjects[i].id;
-// }
-// console.log(max);
-
+let max = 0;
+for (let i = 0; i < arrObjects.length; i++) {
+  console.log(arrObjects[i].id);
+  max < arrObjects[i].id ? (max = arrObjects[i].id) : "";
+}
+console.log(max);
 // 4. When the “Generate Quote” button is pressed, retrieve randomly a quote (ie. an object), and display it in the DOM - like the image above.
 arrMain = [];
 arrQuote = [];
@@ -112,7 +106,7 @@ buttonGenerateQoute.addEventListener("click", randomQuote);
 // 1. In the HTML file, create a form with the inputs “Quote” and “Author” and a button. So when you click on the button, you can add a new quote to the array of object.
 // Important: Don’t forget to set the id of the new quotes
 
-let newId = 3;
+let newId = max;
 const addButton = document.querySelector(".addButton");
 const author = document.querySelector(".author");
 const quote = document.querySelector(".qoute");
