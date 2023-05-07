@@ -29,10 +29,12 @@ const arrObjects = [
 // let max = 0;
 // for (let i = 0; i < arrObjects.length; i++) {
 //   console.log(arrObjects[i].id);
-
-//   if (arrObjects[i].id < arrObjects[i + 1].id) {
-//     max = arrObjects[i + 1].id;
-//   } else max = arrObjects[i].id;
+//   arrObjects[i].id > arrObjects[i + 1].id
+//     ? (max = arrObjects[i + 1].id)
+//     : (max = arrObjects[i].id);
+//   //   if (arrObjects[i].id < arrObjects[i + 1].id) {
+//   //     max = arrObjects[i + 1].id;
+//   //   } else max = arrObjects[i].id;
 // }
 // console.log(max);
 
@@ -45,6 +47,9 @@ arrQuote = [];
     QuoteObject = {};
     QuoteObject.quote = item.quote;
     QuoteObject.author = item.author;
+    QuoteObject.lengthWithSpace = item.lengthWithSpace;
+    QuoteObject.lengthWitoutSpace = item.lengthWitoutSpace;
+    QuoteObject.NumberOfWords = item.NumberOfWords;
     arrQuote.push(QuoteObject);
   });
 })();
