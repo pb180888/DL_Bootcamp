@@ -8,10 +8,27 @@
     <title>Mini Project - Random Quote Generator</title>
   </head>
   <body>
+    <section class="addQuote">
+      <form action="">
+        <input class="qoute" type="text" name="Quote" placeholder="Quote" />
+        <input class="author" type="text" name="Author" placeholder="Author" />
+        <input class="addButton" type="button" value="ADD" />
+      </form>
+    </section>
     <section class="genQoutes">
       <button class="generateQuote">Generate Quote</button>
       <div class="placeQuote"></div>
     </section>
+    <section class="setSetting">
+      <!-- check result in consol in arrObjects  -->
+      <p><h3> Check result in consol in arrObjects</h3></p>
+      <!-- // A button that gives the number of character inside each quote (space included) -->
+      <button class="insideSpace set">Character inside with space</button>
+      <button class="insideWithoutSpace set">Character inside without space</button
+      >
+      <button class="numberOfWords set">Number of words</button>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
