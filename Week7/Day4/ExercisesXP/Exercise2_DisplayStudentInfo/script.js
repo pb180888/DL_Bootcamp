@@ -1,7 +1,3 @@
-const datePerson = {
-  first: "John",
-  last: "Smith",
-};
 function displayStudentInfo(objUser) {
   const { first, last } = objUser;
   return `Your full name is ${first} ${last}`;
