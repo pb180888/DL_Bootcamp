@@ -6,9 +6,9 @@ function keysANDvalues(object) {
 
   const newArr = Object.entries(object);
   stickArr = newArr
-    .map((item) => item.reduce((acc, i) => acc + "*" + i))
+    .map((item) => item.reduce((acc, i) => acc + "*****" + i))
     .sort();
-  finallyArr = stickArr.map((item) => item.split("*"));
+  finallyArr = stickArr.map((item) => item.split("*****"));
   result = Object.fromEntries(finallyArr);
   console.log(result);
 }
