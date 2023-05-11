@@ -2,13 +2,12 @@
 // 2. Return the keys sorted alphabetically, and their corresponding values in the same order.
 
 function keysANDvalues(object) {
-  console.log(Object.keys(object), Object.values(object));
-
-  const newArr = Object.entries(object);
-  stickArr = newArr
-    .map((item) => item.reduce((acc, i) => acc + "*****" + i))
+  console.log("Keys: ", Object.keys(object));
+  console.log("Values: ", Object.values(object));
+  const newArr = Object.entries(object)
+    .map((item) => item.reduce((acc, i) => acc + "*/*/*" + i))
     .sort();
-  finallyArr = stickArr.map((item) => item.split("*****"));
+  finallyArr = newArr.map((item) => item.split("*/*/*"));
   result = Object.fromEntries(finallyArr);
   console.log(result);
 }
