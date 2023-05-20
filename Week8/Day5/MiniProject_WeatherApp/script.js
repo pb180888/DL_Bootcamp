@@ -35,6 +35,7 @@ function main() {
     const response = JSON.parse(xhr.response);
     console.log(response);
     const divWeather = document.createElement("div");
+    divWeather.style.position = "relative";
     divWeather.style.display = "flex";
     divWeather.style.flexDirection = "column";
     divWeather.style.justifyContent = "space-evenly";
@@ -45,6 +46,14 @@ function main() {
     divWeather.style.border = "2px solid white";
     divWeather.style.borderRadius = "5px/5px";
     divWeather.style.margin = "5px";
+    const divDelete = document.createElement("div");
+    divDelete.style.position = "absolute";
+    divDelete.style.right = "5px";
+    divDelete.style.top = "5px";
+    const picDelete = document.createElement("img");
+    picDelete.style.width = "15px";
+    picDelete.src = `./delete.png`;
+    divDelete.appendChild(picDelete);
     const divCityCountry = document.createElement("div");
     divCityCountry.style.color = "rgb(93,206,233)";
     divCityCountry.style.fontSize = "1.2em";
@@ -73,12 +82,16 @@ function main() {
 
     const divClouds = document.createElement("div");
     divClouds.innerHTML = response.weather[0].description.toUpperCase();
+    divWeather.appendChild(divDelete);
     divWeather.appendChild(divCityCountry);
     divWeather.appendChild(divIconWeather);
     divWeather.appendChild(divTemp);
     divWeather.appendChild(divHumidity);
     divWeather.appendChild(divClouds);
     document.getElementById("weatherList").appendChild(divWeather);
+    picDelete.addEventListener("click", function () {
+      document.getElementById("weatherList").removeChild(divWeather);
+    });
 
     // data about every city weather
     const weatherObject = {};
