@@ -58,11 +58,25 @@ function main() {
     const tempCelsius = Math.round(response.main.temp - 273.15);
     const tempFahrenheit = Math.round((response.main.temp - 273.15) * 1.8 + 32);
     divTemp.innerHTML = `${tempCelsius}c`;
+    const divHumidity = document.createElement("div");
+    divHumidity.style.display = "flex";
+    divHumidity.style.fontSize = "1.5em";
+    const divHumidityNumber = document.createElement("div");
+    divHumidityNumber.innerHTML = response.main.humidity;
+    divHumidity.appendChild(divHumidityNumber);
+    const divHumidityPic = document.createElement("div");
+    const picHumidity = document.createElement("img");
+    picHumidity.style.width = "20px";
+    picHumidity.src = `./humidity.png`;
+    divHumidityPic.appendChild(picHumidity);
+    divHumidity.appendChild(divHumidityPic);
+
     const divClouds = document.createElement("div");
     divClouds.innerHTML = response.weather[0].description.toUpperCase();
     divWeather.appendChild(divCityCountry);
     divWeather.appendChild(divIconWeather);
     divWeather.appendChild(divTemp);
+    divWeather.appendChild(divHumidity);
     divWeather.appendChild(divClouds);
     document.getElementById("weatherList").appendChild(divWeather);
 
@@ -72,6 +86,7 @@ function main() {
     weatherObject.country = response.sys.country;
     weatherObject.temteratureCelsius = tempCelsius;
     weatherObject.temteratureFahrenheit = tempFahrenheit;
+    weatherObject.humidity = response.main.humidity;
     weatherObject.weather = response.weather[0].description.toUpperCase();
     weatherData.push(weatherObject);
   }
