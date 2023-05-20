@@ -12,15 +12,12 @@
 
 function formatDate(date) {
   console.log(date);
-
   newDate = JSON.stringify(date);
-  console.log(newDate);
-
   numberArr = [];
   for (let i of newDate) {
     numberArr.push(Number(i));
   }
-  console.log(numberArr);
+  // console.log(numberArr);
   numberArr.splice(numberArr.length - 6);
 
   let string = "";
@@ -36,3 +33,4 @@ function formatDate(date) {
 formatDate(new Date(2020, 6, 4, 8, 0, 0));
 formatDate(new Date(2019, 11, 31, 23, 59, 59));
 formatDate(new Date(2020, 6, 4));
+formatDate(new Date(`2025-07-21T09:35:31.820Z`));
