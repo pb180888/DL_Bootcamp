@@ -34,6 +34,7 @@ function main() {
   function logRequest() {
     const response = JSON.parse(xhr.response);
     console.log(response);
+    // Warn the user, if he didn’t enter a correct city
     if (response.cod === "404") {
       alert("You enter incorrect city");
     }
@@ -107,5 +108,6 @@ function main() {
     weatherData.push(weatherObject);
   }
   console.log("Data of weather", weatherData);
+  // Either way, as soon as the user submits his answer, reset the form input (ie. make it empty).
   form.city.value = "";
 }
