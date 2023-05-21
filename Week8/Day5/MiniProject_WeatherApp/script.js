@@ -34,6 +34,9 @@ function main() {
   function logRequest() {
     const response = JSON.parse(xhr.response);
     console.log(response);
+    if (response.cod === "404") {
+      alert("You enter incorrect city");
+    }
     const divWeather = document.createElement("div");
     divWeather.style.position = "relative";
     divWeather.style.display = "flex";
