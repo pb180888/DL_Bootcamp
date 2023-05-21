@@ -37,86 +37,91 @@ function main() {
     // Warn the user, if he didn’t enter a correct city
     if (response.cod === "404") {
       document.getElementById("warn").classList.remove("hidden");
+      document.querySelector(".search").classList.add("hidden");
+    } else {
+      const divWeather = document.createElement("div");
+      divWeather.classList.add("zIndex");
+      divWeather.style.position = "relative";
+      divWeather.style.display = "flex";
+      divWeather.style.flexDirection = "column";
+      divWeather.style.justifyContent = "space-evenly";
+      divWeather.style.backgroundColor = "white";
+      divWeather.style.alignItems = "center";
+      divWeather.style.width = "200px";
+      divWeather.style.height = "300px";
+      divWeather.style.border = "2px solid white";
+      divWeather.style.borderRadius = "5px/5px";
+      divWeather.style.margin = "5px";
+      const divDelete = document.createElement("div");
+      divDelete.style.position = "absolute";
+      divDelete.style.right = "5px";
+      divDelete.style.top = "5px";
+      const picDelete = document.createElement("img");
+      picDelete.style.width = "15px";
+      picDelete.src = `./delete.png`;
+      divDelete.appendChild(picDelete);
+      const divCityCountry = document.createElement("div");
+      divCityCountry.style.color = "rgb(93,206,233)";
+      divCityCountry.style.fontSize = "1.2em";
+      divCityCountry.innerHTML = `${response.name}, ${response.sys.country}`;
+      const divIconWeather = document.createElement("div");
+      const img = document.createElement("img");
+      divIconWeather.appendChild(img);
+      img.src = `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
+      const divTemp = document.createElement("div");
+      divTemp.style.fontSize = "3em";
+      const tempCelsius = Math.round(response.main.temp - 273.15);
+      const tempFahrenheit = Math.round(
+        (response.main.temp - 273.15) * 1.8 + 32
+      );
+      divTemp.innerHTML = `${tempCelsius}c`;
+      const divHumidity = document.createElement("div");
+      divHumidity.style.display = "flex";
+      divHumidity.style.fontSize = "1.5em";
+      const divHumidityNumber = document.createElement("div");
+      divHumidityNumber.innerHTML = response.main.humidity;
+      divHumidity.appendChild(divHumidityNumber);
+      const divHumidityPic = document.createElement("div");
+      const picHumidity = document.createElement("img");
+      picHumidity.style.width = "20px";
+      picHumidity.src = `./humidity.png`;
+      divHumidityPic.appendChild(picHumidity);
+      divHumidity.appendChild(divHumidityPic);
+
+      const divClouds = document.createElement("div");
+      divClouds.innerHTML = response.weather[0].description.toUpperCase();
+      divWeather.appendChild(divDelete);
+      divWeather.appendChild(divCityCountry);
+      divWeather.appendChild(divIconWeather);
+      divWeather.appendChild(divTemp);
+      divWeather.appendChild(divHumidity);
+      divWeather.appendChild(divClouds);
+      document.getElementById("weatherList").appendChild(divWeather);
+      picDelete.addEventListener("click", function () {
+        document.getElementById("weatherList").removeChild(divWeather);
+      });
+      // data about every city weather
+      const weatherObject = {};
+      weatherObject.city = response.name;
+      weatherObject.country = response.sys.country;
+      weatherObject.temteratureCelsius = tempCelsius;
+      weatherObject.temteratureFahrenheit = tempFahrenheit;
+      weatherObject.humidity = response.main.humidity;
+      weatherObject.weather = response.weather[0].description.toUpperCase();
+      weatherData.push(weatherObject);
     }
     document
       .querySelector(".closeButton")
       .addEventListener("click", function () {
         document.getElementById("warn").classList.add("hidden");
+        document.querySelector(".search").classList.remove("hidden");
       });
     document
       .querySelector(".deleteCross")
       .addEventListener("click", function () {
         document.getElementById("warn").classList.add("hidden");
+        document.querySelector(".search").classList.remove("hidden");
       });
-    const divWeather = document.createElement("div");
-    divWeather.classList.add("zIndex");
-    divWeather.style.position = "relative";
-    divWeather.style.display = "flex";
-    divWeather.style.flexDirection = "column";
-    divWeather.style.justifyContent = "space-evenly";
-    divWeather.style.backgroundColor = "white";
-    divWeather.style.alignItems = "center";
-    divWeather.style.width = "200px";
-    divWeather.style.height = "300px";
-    divWeather.style.border = "2px solid white";
-    divWeather.style.borderRadius = "5px/5px";
-    divWeather.style.margin = "5px";
-    const divDelete = document.createElement("div");
-    divDelete.style.position = "absolute";
-    divDelete.style.right = "5px";
-    divDelete.style.top = "5px";
-    const picDelete = document.createElement("img");
-    picDelete.style.width = "15px";
-    picDelete.src = `./delete.png`;
-    divDelete.appendChild(picDelete);
-    const divCityCountry = document.createElement("div");
-    divCityCountry.style.color = "rgb(93,206,233)";
-    divCityCountry.style.fontSize = "1.2em";
-    divCityCountry.innerHTML = `${response.name}, ${response.sys.country}`;
-    const divIconWeather = document.createElement("div");
-    const img = document.createElement("img");
-    divIconWeather.appendChild(img);
-    img.src = `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
-    const divTemp = document.createElement("div");
-    divTemp.style.fontSize = "3em";
-    const tempCelsius = Math.round(response.main.temp - 273.15);
-    const tempFahrenheit = Math.round((response.main.temp - 273.15) * 1.8 + 32);
-    divTemp.innerHTML = `${tempCelsius}c`;
-    const divHumidity = document.createElement("div");
-    divHumidity.style.display = "flex";
-    divHumidity.style.fontSize = "1.5em";
-    const divHumidityNumber = document.createElement("div");
-    divHumidityNumber.innerHTML = response.main.humidity;
-    divHumidity.appendChild(divHumidityNumber);
-    const divHumidityPic = document.createElement("div");
-    const picHumidity = document.createElement("img");
-    picHumidity.style.width = "20px";
-    picHumidity.src = `./humidity.png`;
-    divHumidityPic.appendChild(picHumidity);
-    divHumidity.appendChild(divHumidityPic);
-
-    const divClouds = document.createElement("div");
-    divClouds.innerHTML = response.weather[0].description.toUpperCase();
-    divWeather.appendChild(divDelete);
-    divWeather.appendChild(divCityCountry);
-    divWeather.appendChild(divIconWeather);
-    divWeather.appendChild(divTemp);
-    divWeather.appendChild(divHumidity);
-    divWeather.appendChild(divClouds);
-    document.getElementById("weatherList").appendChild(divWeather);
-    picDelete.addEventListener("click", function () {
-      document.getElementById("weatherList").removeChild(divWeather);
-    });
-
-    // data about every city weather
-    const weatherObject = {};
-    weatherObject.city = response.name;
-    weatherObject.country = response.sys.country;
-    weatherObject.temteratureCelsius = tempCelsius;
-    weatherObject.temteratureFahrenheit = tempFahrenheit;
-    weatherObject.humidity = response.main.humidity;
-    weatherObject.weather = response.weather[0].description.toUpperCase();
-    weatherData.push(weatherObject);
   }
   console.log("Data of weather", weatherData);
   // Either way, as soon as the user submits his answer, reset the form input (ie. make it empty).
