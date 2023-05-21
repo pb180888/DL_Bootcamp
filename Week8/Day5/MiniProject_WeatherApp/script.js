@@ -107,4 +107,5 @@ function main() {
     weatherData.push(weatherObject);
   }
   console.log("Data of weather", weatherData);
+  form.city.value = "";
 }
