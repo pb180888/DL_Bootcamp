@@ -44,3 +44,64 @@ form > #input {
 .title {
   display: flex;
 }
+.zIndex {
+  z-index: 1;
+}
+
+#warn {
+  z-index: 2;
+  position: fixed;
+  left: 32.5%;
+  top: 28%;
+  width: 35%;
+  height: 40vh;
+  background-color: white;
+  border: 1px solid rgb(197, 67, 68);
+  border-radius: 5px/5px;
+  overflow: hidden;
+}
+.redZone {
+  margin: 0;
+  height: 50%;
+  width: 100%;
+  background-color: rgb(197, 67, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.alert {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.alertCross {
+  width: 30%;
+}
+.deleteCross {
+  right: 15px;
+  top: 10px;
+  width: 30px;
+  position: absolute;
+}
+.ooops {
+  font-family: unset;
+  font-weight: 600;
+}
+.location {
+  font-family: sans-serif;
+  color: rgb(128, 128, 128);
+}
+.closeButton {
+  background-color: rgb(18, 57, 91);
+  border: 2px solid rgb(18, 57, 91);
+  border-radius: 2px/2px;
+  padding: 5px 25px;
+  color: white;
+}
+.hidden {
+  display: none;
+}

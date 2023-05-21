@@ -36,9 +36,20 @@ function main() {
     console.log(response);
     // Warn the user, if he didn’t enter a correct city
     if (response.cod === "404") {
-      alert("You enter incorrect city");
+      document.getElementById("warn").classList.remove("hidden");
     }
+    document
+      .querySelector(".closeButton")
+      .addEventListener("click", function () {
+        document.getElementById("warn").classList.add("hidden");
+      });
+    document
+      .querySelector(".deleteCross")
+      .addEventListener("click", function () {
+        document.getElementById("warn").classList.add("hidden");
+      });
     const divWeather = document.createElement("div");
+    divWeather.classList.add("zIndex");
     divWeather.style.position = "relative";
     divWeather.style.display = "flex";
     divWeather.style.flexDirection = "column";
