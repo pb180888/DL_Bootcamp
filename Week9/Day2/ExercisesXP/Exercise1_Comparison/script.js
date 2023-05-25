@@ -6,7 +6,9 @@ function compareToTen(num) {
   let promise = new Promise(function (resolve, reject) {
     num = num < 10 ? resolve("response: resolve") : reject("response: reject");
   });
-
+  promise
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error));
   return promise;
 }
 console.log(compareToTen(9));
