@@ -2,12 +2,17 @@
 // 2. How can you make your promise from part 1 shorter using Promise.resolve() and console.log “success”?
 // 3. Add code to catch errors and console.log ‘Ooops something went wrong’.
 let word = true;
-let promise = new Promise(function (resolve, reject) {
-  setTimeout(() => {
-    word =
-      word === true ? resolve("succes") : reject("Ooops something went wrong");
-  }, 4000);
+const promise = new Promise(function (resolve, reject) {
+  setTimeout(
+    () =>
+      (word =
+        word == true
+          ? resolve("success")
+          : reject("Ooops something went wrong")),
+    4000
+  );
 });
+// const promise = Promise.resolve(setTimeout(() => console.log("success"), 4000));
 promise
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
