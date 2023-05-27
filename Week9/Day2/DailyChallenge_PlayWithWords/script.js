@@ -19,7 +19,6 @@ function makeAllCaps(arr) {
   return newArr;
 }
 upperCaseArr1 = makeAllCaps(["hello", "good", "how", "are", "you"]);
-upperCaseArr2 = makeAllCaps(["hello", "bye"]);
 
 // 3. The second function called sortWords(), takes an array of words uppercased as an argument
 //     If the array length is bigger than 4, resolve the promise. The value of the resolved promise is the array of words sorted in alphabetical order.
@@ -36,7 +35,7 @@ function sortWords(arr) {
 }
 
 sortWords(upperCaseArr1);
-sortWords(upperCaseArr2);
+
 // /
 // /
 // /
@@ -170,7 +169,6 @@ function toMorse(morseJS) {
 // this function joins the morse translation by using line break and display it on the page (ie. On the DOM)
 
 function joinWords(morseTranslation) {
-  console.log(morseTranslation);
   const divWord = document.createElement("div");
   divWord.innerHTML = `"${morseTranslation.word}", gives you:`;
   document.body.appendChild(divWord);
