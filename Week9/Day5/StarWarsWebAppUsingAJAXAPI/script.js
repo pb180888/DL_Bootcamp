@@ -36,7 +36,7 @@ async function fetchData() {
     const promisePlanet = await fetch(dataOfHomeWorld.result.properties.url);
     const infoplanet = await promisePlanet.json();
     const planet = await infoplanet.result.properties.name;
-    // hideLoadingSpinner();
+    hideLoadingSpinner();
     console.log(dataProperties);
     console.log(name, height, gender, birth_year, planet);
 
@@ -62,11 +62,10 @@ button.addEventListener("mousedown", function (e) {
 
 function showLoadingSpinner() {
   const spinner = document.getElementById("spinner");
-  console.log(spinner);
-  spinner.classList.remove(".hidden");
-  spinner.classList.add(".show");
+  spinner.classList.remove("hidden");
+  spinner.classList.add("show");
 }
-// function hideLoadingSpinner() {
-//   spinner.classList.add(".hidden");
-//   spinner.classList.remove(".show");
-// }
+function hideLoadingSpinner() {
+  spinner.classList.add("hidden");
+  spinner.classList.remove("show");
+}

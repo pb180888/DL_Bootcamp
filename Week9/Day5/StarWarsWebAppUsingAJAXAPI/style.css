@@ -38,3 +38,9 @@ body {
 .show {
   display: block;
 }
+#spinner {
+  position: absolute;
+}
+i {
+  color: rgb(241, 196, 45);
+}
