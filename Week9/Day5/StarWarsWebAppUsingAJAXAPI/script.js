@@ -49,9 +49,9 @@ async function fetchData() {
 
     document.querySelector(".planet").textContent = `Planet: ${planet}`;
   } catch (err) {
-    const errDiv = document.createElement("div");
-    errDiv.innerHTML = err;
-    table.appendChild(errDiv);
+    document.querySelector(
+      ".name"
+    ).textContent = `Oh no!  That person isn't available`;
   }
 }
 
