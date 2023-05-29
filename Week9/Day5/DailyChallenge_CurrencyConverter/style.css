@@ -10,6 +10,7 @@ body {
   align-items: center;
 }
 #main {
+  position: relative;
   width: 70%;
   height: 90%;
   border: 2px solid rgba(0, 0, 150, 0.2);
@@ -61,4 +62,14 @@ select {
   background-color: rgba(0, 0, 150, 0.3);
   height: 60%;
   color: white;
+}
+.arrows {
+  width: 8%;
+  position: absolute;
+  top: 45%;
+  right: 34%;
+  transition: 1s;
+}
+.arrows:hover {
+  scale: 1.1;
 }

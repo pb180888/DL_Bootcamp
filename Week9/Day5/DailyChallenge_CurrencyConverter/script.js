@@ -45,6 +45,7 @@ const currencyName = [
   ["UAH", "Ukrainian Hryvnia"],
   ["USD", "United States Dollar"],
 ];
+const change = document.querySelector(".arrows");
 const getData = async function () {
   try {
     const res = await fetch(url);
