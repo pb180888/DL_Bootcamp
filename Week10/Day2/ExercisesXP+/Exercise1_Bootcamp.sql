@@ -1,0 +1,31 @@
+-- Database: bootcamp
+
+-- DROP DATABASE IF EXISTS bootcamp;
+
+-- CREATE TABLE students(
+--  id SERIAL PRIMARY KEY,
+--  first_name VARCHAR (50) NOT NULL,
+--  last_name VARCHAR (100) NOT NULL,
+--  birth_date DATE NOT NULL
+-- )
+
+-- insert into students(first_name,last_name,birth_date)
+-- values('Marc','Benichou','11/02/1998'),
+-- ('Yoan','Cohen','12/03/2010'),
+-- ('Lea','Benichou','07/27/1987'),
+-- ('Amelia','Dux','04/07/1996'),
+-- ('David','Grez','06/14/2003'),
+-- ('Omer','Simpson','10/03/1980');
+-- /////////////////////////////
+-- insert into students(first_name,last_name,birth_date)
+-- values('Pavel','Bogdanov','08/18/1988');
+-- select * from students;
+-- select first_name, last_name from students;
+-- select first_name, last_name from students where id = 2;
+-- select first_name, last_name from students where last_name = 'Benichou' and first_name ='Marc';
+-- select first_name,last_name from students where last_name ='Benichou' or first_name = 'Marc';
+-- select first_name,last_name from students where  first_name like 'a%';
+-- select first_name,last_name from students where  first_name like '%a';
+-- select first_name,last_name from students where  first_name like '%a_';
+-- select first_name,last_name from students where  id = 1 or id = 3;
+-- select first_name, last_name from students where birth_date >= '01/01/2000'
