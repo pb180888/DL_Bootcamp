@@ -1,0 +1,13 @@
+-- Database: Hollywood
+
+-- Create another table producers, with a foreign key : the id of a movie.
+-- The producers table is linked to the movies table
+-- INSERT INTO producers (first_name, last_name, movie_id) VALUES
+--     ( (select first_name from actors where first_name = 'Matt'), 
+--     (select last_name from actors where last_name = 'Damon'),
+--     (select movie_id from movies where movie_id = '1'));
+-- select * from producers
+-- SELECT movies.movie_title, movies.movie_story
+-- FROM movies
+-- INNER JOIN producers
+-- ON movies.movie_id = producers.producer_id;
