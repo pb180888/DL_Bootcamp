@@ -1,11 +1,11 @@
-const submitBtn = document.querySelector("#submit");
+const data = window.location.search;
+let newData = "";
+for (let i = 0; i < data.length; i++) {
+  if (data[i] === "?" || data[i] === "=" || data[i] === "&") {
+    data[i] === "_";
+  } else {
+    newData = newData + data[i];
+  }
+}
 
-let dataObj = {};
-submitBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  const div = document.querySelector(".placeForFill");
-  dataObj.name = document.querySelector("#name").value;
-  dataObj.last_name = document.querySelector("#lname").value;
-  console.log(dataObj);
-  div.innerHTML = dataObj.name;
-});
+document.querySelector(".placeForFill").innerHTML = newData;
