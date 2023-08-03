@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .invisible {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+    </style>
+    <title>LoginFrom</title>
+  </head>
+  <body>
+    <form action="/loginForm" id="first" method="post" target="_blank">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /><br />
+      <input type="submit" value="send" id="button" disabled />
+    </form>
+    <div id="root1"></div>
+    <script src="log.js"></script>
+  </body>
+</html>

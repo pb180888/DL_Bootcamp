@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .invisible {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+    </style>
+    <title>RegisterForm</title>
+  </head>
+  <body>
+    <form action="" id="first">
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="fname" required /><br />
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lname" required /><br />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required /><br />
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required /><br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required /><br />
+      <input type="submit" value="Register" id="button" disabled />
+    </form>
+    <div id="root1"></div>
+    <script src="reg.js"></script>
+  </body>
+</html>
