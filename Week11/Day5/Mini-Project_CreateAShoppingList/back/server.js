@@ -6,6 +6,7 @@ const port = 3000;
 const items = [];
 app.use(express.json());
 app.use(cors());
+app.use(express.static("../front"));
 app.post("/items", postItem);
 app.get("/items", getItems);
 app.listen(port, () => console.log(`I'm listeting on ${port}`));
